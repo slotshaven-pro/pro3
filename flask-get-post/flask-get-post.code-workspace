@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{ 
+			"path": "."
+		}
+	],
+	"settings": {
+				"window.title": "Flask server with http GET and POST",
+		"editor.tabSize": 2,
+		"editor.indentSize": "tabSize",
+		"editor.detectIndentation": false,
+	}
+}
