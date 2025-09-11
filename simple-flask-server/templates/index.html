@@ -1,13 +1,17 @@
+<html>
 <head>
-    <title>{{ title }}</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+</head>
 <body>
     <div class="App">
         <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
+            <img src="{{ url_for('static', filename='slotshaven-logo.png') }}" class="App-logo" alt="logo" />
             <p>
-                Velkommen til min webserver <span class="heart">♥️</span>
+                Eksempel 1: simpel webserver med flask<span class="heart">♥️</span>
+            </p>
+            <p>
+                parameter "name" = {{ name }}
             </p>
             <p class="small">
                 Edit <code>templates/index.html</code> and refresh to see your changes!

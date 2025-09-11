@@ -1,14 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template("index.html", title="Hello")
-
-@app.route("/test")
-def test_page():
-    return render_template("test.html", title="Test")
+    # Definer parameter 'name' som overføres til template
+    name = request.args.get("name", "jens") 
+    return render_template("index.html", name=name, title="Simple Flask Server")
 
 # Start Flask server
 if __name__ == "__main__":
