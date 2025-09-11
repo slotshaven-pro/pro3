@@ -5,9 +5,14 @@
 		}
 	],
 	"settings": {
-				"window.title": "Flask server with http GET and POST",
-		"editor.tabSize": 2,
+		"window.title": "Flask server with http GET and POST",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+		"editor.tabSize": 4,
 		"editor.indentSize": "tabSize",
-		"editor.detectIndentation": false,
+  	"editor.insertSpaces": true,
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		"git.enableSmartCommit": true,
+		"git.confirmSync": false
 	}
 }
