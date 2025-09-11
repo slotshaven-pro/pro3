@@ -3,7 +3,7 @@ import sqlite3
 
 # Import Flask and other necessary modules
 app = Flask(__name__)
-DB_ALBUM = "beatles.db"
+DB_ALBUM = "./db/beatles.db"
 
 def get_db_albums():
     if "db" not in g:
