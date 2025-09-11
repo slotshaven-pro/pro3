@@ -1,4 +1,4 @@
-# Website med søgning
+# Eksempel 4: Website med søgning
 
 Dette projekt er et websted, der gør det muligt at søge i en database. Søgningen udføres mod en SQLite3-database ved hjælp af Python og Flask.
 
