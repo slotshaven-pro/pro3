@@ -1,5 +1,4 @@
-from flask import Flask, request, render_template, g
-import sqlite3
+from flask import Flask, request, render_template
 
 # Import Flask and other necessary modules
 app = Flask(__name__)
@@ -39,7 +38,7 @@ def fibonacci_number(n):
       for _ in range(2, n + 1):
         a, b = b, a + b
       return b
-    
+
 # Start Flask server
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
