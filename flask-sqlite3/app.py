@@ -3,8 +3,8 @@ import sqlite3
 
 # Import Flask and other necessary modules
 app = Flask(__name__)
-DB_ALBUM = "beatles.db"
-DB_USERS = "users.db"
+DB_ALBUM = "./db/beatles.db"
+DB_USERS = "./db/users.db"
 def get_db_albums():
     if "db" not in g:
         g.db = sqlite3.connect(DB_ALBUM)
@@ -40,7 +40,7 @@ def front_page():
     data = cur.fetchall()
     users = {"users": [dict(u) for u in data]}
     return render_template("index.html", title="Welcome", users=users)
-    
+
 # Start Flask server
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
